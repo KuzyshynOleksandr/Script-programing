@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна 1.2</title>
+</head>
+<body>
+    <h1>Результати виконання Завдання2 в консолі</h1>
+    <script src="lab2-2.js"></script>
+    <script>
+        console.log("IP Test (192.168.0.1):", isIPAddress("192.168.0.1"));
+        console.log("RGBA Test:", findRGBA("background: rgba(255, 0, 12, 0.5);"));
+        console.log("Hex Color Test:", findHexColor("Color is #ff5733 and #000"));
+        
+        const htmlSnippet = '<div><img src="a.jpg"><span></span><img src="b.png"></div>';
+        console.log("Tags Test (img):", findTags(htmlSnippet, "img"));
+        
+        const mixedText = "У нас є 10 яблук, -5 градусів та ціна 15.50. Дата: 2024-05-20. Контакт: test@example.com";
+        console.log("Positive Numbers:", findPosNum(mixedText));
+        console.log("Dates:", findDates(mixedText));
+        console.log("Emails:", findEmail(mixedText));
+    </script>
+</body>
+</html>
